@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="style.css">
+        <title>vitesse coupe et avance</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="selection">
+                <div>
+                <label for="">selectionnez votre outil</label>
+                <select name="outils" id="outils">
+                    <option value="0">Ars</option>
+                    <option value="1">Carbure monobloc</option>   
+                    <option value="2">Plaquette Carbure</option>   
+                    <option value="3">Perçage Ars</option>   
+                    <option value="4">Perçage carbure</option>   
+                </select>
+                </div>
+                <div>
+                <label for="">selectionnez la matiere</label>
+                <select name="matiere" id="matiere">
+                    <option value="0">Acier durs</option>
+                    <option value="1">Acier</option>   
+                    <option value="2">inox</option>   
+                    <option value="3">aluminium</option>   
+                    <option value="4">pvc</option>   
+                    <option value="5">plastique</option>
+                    <option value="6">pom</option>
+                    <option value="7">composite de bois</option>
+                </select>
+            </div>
+
+            </div>
+            <div class="coupe">
+            <h2>calcul vitesse de coupe</h2>
+            
+            <div class="entree">
+                <label>Entrez votre diametre</label>
+                <input type="text/submit/hidden/button/image" name="diametre" id="diametre" value="0" />
+            </div>
+            <div >
+                vc ébauche:<span id="vc_ebauche">0</span> m/mim
+            </div>
+            <div>
+                vc finition:<span id="vc_finition">0</span> m/min
+            </div>
+
+            
+            <div>
+                rotation ébauche:<span id="tour_ebauche">0</span> tr/min
+            </div>
+            <div >
+                rotation finition:<span id="tour_finition">0</span> tr/min
+            </div>
+
+    
+            </div>
+            <!--fin de calcul de coupe-->
+            
+             <div class="avance">
+            
+            <h2>calcul vitesse d'avance</h2>
+            <div class="entree">
+                <label>Entrez nombre de dent</label>
+                <input type="text/submit/hidden/button" name="nombre de dent" id="nombre_de_dent" value="1" />
+            </div>    
+            <div >
+                fz ébauche:<span id="fz_ebauche">0</span> mm/min
+            </div>
+            <div>
+                fz finition:<span id="fz_finition">0</span>mm/min
+            </div>
+            
+            <div>
+                avance ébauche:<span id="avance_ebauche">0</span> mm/min
+             </div>
+             <div>
+                avance finition:<span id="avance_finition">0</span> mm/min
+         </div>
+
+            </div>
+            <div>
+                <a href="#" id="calculer">calculer</a>
+            </div>
+        </div>
+    </body>
+    <script src="calcul.js" type="text/javascript" charset="utf-8"></script>
+</html>
